@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.bttns {
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bttns h1 {
+    width: 100%;
+    height: 100%;
+}
+
+.input_sel,
+.output_sel,
+.counter_sel,
+.clear_sel {
+    margin: 2rem;
+}
+
+.input_bttn,
+.output_bttn,
+.count_bttn,
+.clear_bttn {
+    border-radius: 0.5em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.input_bttn {
+    background-color: green;
+}
+
+.output_bttn {
+    background-color: blue;
+}
+
+.count_bttn {
+    background-color: cyan;
+}
+
+.clear_bttn {
+    background-color: red;
+}
+
+.choice_input {
+    display: none;
+}
+
+/* input screen */
+/* hide radio buttons */
+[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* style images */
+[type="radio"] + img {
+    margin-left: 1%;
+    cursor: pointer;
+    padding: 2.2%;
+}
+
+/* draw border around selected card */
+[type="radio"]:checked + img {
+    outline: 2px solid #f00;
+}
+
+@media screen and (max-width: 500px) {
+    /* scale img under 500px images */
+    [type="radio"] + img {
+        margin-left: 0%;
+        padding: 0.1%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* counter screen */
+.count_title {
+    padding-left: 1em;
+    text-align: left;
+}
+
+.counter {
+    text-align: right;
+    color: red;
+    font-family: "Segment7Standard";
+    font-weight: normal;
+    font-size: 128pt;
+    border: darkgrey;
+    border-style: solid;
+    border-radius: 5%;
+    width: 230pt;
+    height: 130pt;
+    margin: 0;
+}
+
+/* output screen */
+.out_title {
+    z-index: 999;
+    position: relative;
+}
+
+#container {
+    position: relative;
+}
+
+#win,
+#lose {
+    z-index: 0;
+    position: relative;
+    max-width: 50%;
+    height: auto;
+    margin: -15% auto;
+}
+
+@media only screen and (min-width: 1200px) {
+    #win,
+    #lose {
+        max-width: 40%;
+        height: auto;
+        margin: -10% auto;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    #win,
+    #lose {
+        max-width: 25%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #win,
+    #lose {
+        max-width: 80%;
+        height: auto;
+        margin: -20% auto;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="..\styles\style.css" />
+        <script src="..\src\input.js"></script>
+        <title>INPUT</title>
+    </head>
+    <body>
+        <div id="ID_input">
+            <h2>Please Enter Your Number</h2>
+            <label for="num">Number</label><br />
+            <input type="text" id="IDnum" name="IDnum" /><br />
+            <button type="button" onclick="getIDValue()">Submit</button>
+        </div>
+
+        <div id="choice_input" class="choice_input">
+            <h2>Pick A Card!</h2>
+            <div class="choices" id="choices">
+                <label>
+                    <input type="radio" name="choice" value="0" checked />
+                    <img src="../bin/base_card.png" width="130" height="190" />
+                </label>
+
+                <label>
+                    <input type="radio" name="choice" value="1" checked />
+                    <img src="../bin/base_card.png" width="130" height="190" />
+                </label>
+                <label>
+                    <input type="radio" name="choice" value="2" checked />
+                    <img src="../bin/base_card.png" width="130" height="190" />
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="choice" value="3" checked />
+                    <img src="../bin/base_card.png" width="130" height="190" />
+                </label>
+
+                <label>
+                    <input type="radio" name="choice" value="4" checked />
+                    <img src="../bin/base_card.png" width="130" height="190" />
+                </label>
+                <label>
+                    <input type="radio" name="choice" value="5" checked />
+                    <img src="../bin/base_card.png" width="130" height="190" />
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="choice" value="6" checked />
+                    <img src="../bin/base_card.png" width="130" height="190" />
+                </label>
+
+                <label>
+                    <input type="radio" name="choice" value="7" checked />
+                    <img src="../bin/base_card.png" width="130" height="190" />
+                </label>
+                <label>
+                    <input type="radio" name="choice" value="8" checked />
+                    <img src="../bin/base_card.png" width="130" height="190" />
+                </label>
+            </div>
+            <br />
+            <button type="button" onclick="getChoice()">Submit</button>
+        </div>
+    </body>
+</html>

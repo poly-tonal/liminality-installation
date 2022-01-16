@@ -40,7 +40,7 @@ function save() {
 
     //POST request to sever to send data
     let xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "http://localhost:80/add", true);
+    xhttp.open("POST", "http://localhost:8080/add", true);
     xhttp.setRequestHeader("Content-type", "application/json");
     //sent data for variable
     xhttp.send(JSON.stringify(obj));

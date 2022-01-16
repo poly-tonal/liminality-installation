@@ -8,7 +8,7 @@ const { nextTick } = require("process");
 
 //server setup
 const app = express();
-const port = 80;
+const port = 8080;
 app.use(express.static("public"));
 
 //GET requests - serve static pages

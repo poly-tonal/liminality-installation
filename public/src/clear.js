@@ -1,5 +1,5 @@
 var host = localhost;
-var port = 80;
+var port = 8080;
 
 function clear() {
     console.log("clearing");
